@@ -4,10 +4,7 @@ import static ch.claude_martin.filterByType.FilterByType.byType;
 import static ch.claude_martin.filterByType.FilterByType.filterByType;
 
 import java.math.BigDecimal;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Objects;
-import java.util.stream.Gatherer;
+import java.util.*;
 
 public class Demo {
 	public static void main(String[] args) {

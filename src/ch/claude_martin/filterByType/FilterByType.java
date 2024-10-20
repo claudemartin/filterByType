@@ -27,7 +27,7 @@ public interface FilterByType {
 	@SuppressWarnings("unchecked")
 	public static <T, R extends T> Gatherer<T, ?, R> byType(Class<R> type) {
 		Objects.requireNonNull(type, "type");
-		return () -> (state, element, downstream) -> type.isInstance(element) ? downstream.push((R) element) : true;
+		return () -> (_, element, downstream) -> type.isInstance(element) ? downstream.push((R) element) : true;
 	}
 
 }
